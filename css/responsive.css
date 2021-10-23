@@ -216,26 +216,16 @@
     font-size: 24px;
   }
   #hero .choose-slider span.title-active {
-    font-size: 40px;
+    font-size: 32px;
   }
   #hero .slider-content, #hero .choose-slider {
-    bottom: 50%;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    bottom: 15%;
   }
 }
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 500px) {
   #hero .choose-slider {
     display: none;
-  }
-}
-
-@media only screen and (min-height: 601px) {
-  #hero .choose-slider {
-    bottom: 50%;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
   }
 }
 /*# sourceMappingURL=responsive.css.map */
