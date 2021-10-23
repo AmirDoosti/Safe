@@ -1,6 +1,7 @@
 /************
 variables
 ************/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Teko:wght@300;500&display=swap");
 :root {
   --our-cyan: #297a88;
 }
@@ -22,7 +23,7 @@ html {
 body {
   direction: ltr;
   text-align: left;
-  font-family: 'Teko', sans-serif;
+  font-family: 'Teko';
   position: relative;
 }
 
@@ -35,16 +36,17 @@ ul {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin: 0;
-  font-family: 'Teko', sans-serif;
+  font-family: 'Teko';
   font-weight: 500;
 }
 
 p,
 a,
 span,
-li {
+li,
+button {
   margin: 0;
-  font-family: 'Teko', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 300;
 }
 
@@ -102,7 +104,6 @@ button:focus {
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
-  border-radius: 4px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
@@ -117,7 +118,6 @@ button:focus {
   background-color: #fff;
   border: 2px solid #fff;
   color: var(--our-cyan);
-  border-radius: 4px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
@@ -139,11 +139,11 @@ button:focus {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .light {
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .scrolledDown {
@@ -236,12 +236,11 @@ input[type="color"]:focus,
 }
 
 #desktop_header .nav-bar .menu li.main-li i {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 #desktop_header .nav-bar .menu li.main-li > a {
   color: #fff;
-  font-size: 22px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -258,7 +257,7 @@ input[type="color"]:focus,
   position: absolute;
   background: #fff;
   padding: 1rem;
-  width: 220px;
+  width: 200px;
   height: auto;
   top: 100%;
   left: 0;
@@ -281,13 +280,16 @@ input[type="color"]:focus,
 
 #desktop_header .nav-bar .menu ul.inner-ul li.inner-li a {
   color: #000;
-  font-size: 22px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
 #desktop_header .nav-bar .menu ul.inner-ul li.inner-li a:hover {
   color: #505050;
+}
+
+#desktop_header .nav-bar .menu ul.inner-ul li.inner-li a:not(:last-child) {
+  margin-bottom: 0.7rem;
 }
 
 #desktop_header .nav-bar .menu li.main-li:hover > ul.inner-ul {
@@ -311,11 +313,6 @@ input[type="color"]:focus,
   color: #000;
 }
 
-#desktop_header .nav-bar .call-us span {
-  position: relative;
-  top: 2px;
-}
-
 #hero {
   min-height: 100vh;
   width: 100%;
@@ -335,7 +332,24 @@ input[type="color"]:focus,
   height: 100%;
 }
 
-#hero .carousel-item img {
+#hero .carousel-item .img-container {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+#hero .carousel-item .img-container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#hero .carousel-item .img-container img {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   height: 100%;
@@ -405,7 +419,7 @@ input[type="color"]:focus,
 }
 
 #hero .choose-slider div {
-  margin: 0 0 2vh 0;
+  margin: 0 0 3vh 0;
   text-align: right;
 }
 
@@ -452,6 +466,12 @@ input[type="color"]:focus,
 #hero .scroll-down a {
   color: #fff;
   padding-bottom: 10px;
+  position: relative;
+  display: block;
+  -webkit-animation: float 2s linear infinite;
+          animation: float 2s linear infinite;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 #hero .scroll-down::after {
@@ -464,6 +484,36 @@ input[type="color"]:focus,
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 #contact {
@@ -490,12 +540,13 @@ input[type="color"]:focus,
   width: -moz-max-content;
   width: max-content;
   position: relative;
+  margin-bottom: 3rem;
 }
 
 #contact .card .card-title-container::before {
   content: '';
   position: absolute;
-  bottom: 110%;
+  bottom: 140%;
   left: 0;
   width: 12%;
   height: 5px;
@@ -503,25 +554,21 @@ input[type="color"]:focus,
   z-index: 1;
 }
 
-#contact .card .card-title {
-  margin-bottom: 3rem;
+#contact .card .card-title h3 {
+  font-size: 45px;
+  line-height: .5;
 }
 
-#contact .card .card-title span {
-  font-size: 40px;
+#contact .card .card-title h3.light {
+  font-weight: 300;
 }
 
-#contact .card .card-title span.light {
-  font-weight: lighter;
-}
-
-#contact .card .card-title span.bold {
-  font-weight: bold;
+#contact .card .card-title h3.bold {
+  font-weight: 500;
 }
 
 #contact .card .card-text {
-  font-weight: lighter;
-  font-size: 18px;
+  font-weight: 300;
 }
 
 #contact .card .card-buttons {
@@ -530,10 +577,5 @@ input[type="color"]:focus,
 
 #contact .card-buttons button:not(:last-child) {
   margin-right: 1.25rem;
-}
-
-#contact .card-buttons span {
-  position: relative;
-  top: 2px;
 }
 /*# sourceMappingURL=main.css.map */

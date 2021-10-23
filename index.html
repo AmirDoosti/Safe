@@ -18,8 +18,11 @@
 
     <!--css animation -->
     <link rel="stylesheet" href="css/animate.css">
-
+    <!-- all fonts -->
     <link rel="stylesheet" href="css/FontsTeko.css">
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--main css files -->
     <link rel="stylesheet" href="css/main.css">
@@ -111,9 +114,11 @@
                 <div class="carousel-inner">
 
                     <!-- slider 1 -->
-                    <div id="carousel_item_1" class="carousel-item active" data-interval="0">
+                    <div id="carousel_item_1" class="carousel-item active" data-interval="5000">
                         <!-- slider image -->
-                        <img src="img/bg-2.jpg" class="d-block w-100 animated pulse animate_slower" alt="slider-image">
+                        <div class="img-container">
+                            <img src="img/bg-4.jpg" class="d-block w-100 animated pulse animate_slower" alt="slider-image">
+                        </div>
                         <!-- slider content -->
                         <div class="slider-content">
                             <div class="card animated slideInLeft">
@@ -132,9 +137,11 @@
                     </div>
 
                     <!-- slider 2 -->
-                    <div id="carousel_item_2" class="carousel-item" data-interval="0">
+                    <div id="carousel_item_2" class="carousel-item" data-interval="5000">
                         <!-- slider image -->
-                        <img src="img/bg-1.jpg" class="d-block w-100 animated pulse animate_slower" alt="slider-image">
+                        <div class="img-container">
+                            <img src="img/bg-1.jpg" class="d-block w-100 animated pulse animate_slower" alt="slider-image">
+                        </div>
                         <!-- slider content -->
                         <div class="slider-content">
                             <div class="card animated slideInLeft">
@@ -153,9 +160,11 @@
                     </div>
 
                     <!-- slider 3 -->
-                    <div id="carousel_item_3" class="carousel-item" data-interval="0">
+                    <div id="carousel_item_3" class="carousel-item" data-interval="5000">
                         <!-- slider image -->
-                        <img src="img/bg-3.jpg" class="d-block w-100 animated pulse animate_slower" alt="slider-image">
+                        <div class="img-container">
+                            <img src="img/bg-3.jpg" class="d-block w-100 animated pulse animate_slower" alt="slider-image">
+                        </div>
                         <!-- slider content -->
                         <div class="slider-content">
                             <div class="card animated slideInLeft">
@@ -174,9 +183,11 @@
                     </div>
 
                     <!-- slider 4 -->
-                    <div id="carousel_item_4" class="carousel-item" data-interval="0">
+                    <div id="carousel_item_4" class="carousel-item" data-interval="5000">
                         <!-- slider image -->
-                        <img src="img/bg-2.jpg" class="d-block w-100 animated pulse animate_slower" alt="slider-image">
+                        <div class="img-container">
+                            <img src="img/bg-1.jpg" class="d-block w-100 animated pulse animate_slower" alt="slider-image">
+                        </div>
                         <!-- slider content -->
                         <div class="slider-content">
                             <div class="card animated slideInLeft">
@@ -230,13 +241,13 @@
                 <div class="row align-items-center">
    
                     <div class="col-lg-6">
-                        <div class="card">
+                        <div class="card" data-aos="fade-down">
                             <div class="card-body">
                                 <div class="card-title-container">
-                                    <h2 class="card-title">
-                                        <span class="light">BUILD YOUR HOUSE WITH</span><br>
-                                        <span class="bold">SAFE CONSTRUCTION</span>
-                                    </h2>
+                                    <div class="card-title">
+                                        <h3 class="light">BUILD YOUR HOUSE WITH</h3><br>
+                                        <h3 class="bold">SAFE CONSTRUCTION</h3>
+                                    </div>
                                 </div>
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptates eligendi explicabo sunt ipsum voluptatibus reprehenderit nisi! Iure ab ipsam quis sapiente adipisci facilis similique non, porro alias, beatae suscipit, quas ducimus voluptatum! Modi dolor ducimus ipsa reiciendis dicta culpa delectus dolores ut id quod architecto obcaecati ipsum molestiae, sint illum natus necessitatibus distinctio repudiandae. Quisquam aut exercitationem pariatur? Assumenda aut, vero eos mollitia laboriosam ipsum quidem vitae repudiandae commodi inventore possimus autem nostrum dolores dolor officiis fuga libero exercitationem placeat, molestiae aliquam nobis tempora deserunt nulla. Tempore suscipit nesciunt officiis, molestiae rem enim, aliquam tenetur pariatur neque, obcaecati nostrum.
@@ -254,7 +265,7 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <div class="img-container">
+                        <div class="img-container" data-aos="fade-up">
                             <img src="img/WhatsApp Image 2021-10-18 at 11.52.41.jpeg" class="img-fluid" alt="worker-img">
                         </div>
                     </div>
@@ -274,30 +285,6 @@
     <!-- End of footer area -->
 
 
-     
-    <!-- <div class="modal fade" id="play_video" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-            <div class="modal-content">
-            
-                <div class="modal-body">
-
-                    <button type="button" class="close mb-4" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-
-                    <video preload="auto" controls class="video-js vjs-theme-city">
-                        <source src="video/Styling forms just got easier!.mp4" type="video/mp4" />
-                        <p class="vjs-no-js">
-                        To view this video please enable JavaScript, and consider upgrading to a
-                        web browser that
-                        </p>
-                    </video>
-                    
-        
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 
     <!-- contact us modal -->
@@ -341,6 +328,9 @@
 
     <!--js animation -->
     <script src="js/wow.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--main js file -->
     <script src="js/main.js"></script>

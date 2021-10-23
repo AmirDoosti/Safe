@@ -12,6 +12,7 @@ $(document).ready(function () {
     });
     
     new WOW().init();
+    AOS.init();
 
     setInterval(() => {
         if ($('#carousel_item_1').hasClass('active')) {
