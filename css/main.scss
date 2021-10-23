@@ -375,7 +375,7 @@ input[type="color"]:focus,
             &::before {
                 content: '';
                 position: absolute;
-                bottom: 110%;
+                bottom: 100%;
                 right: 0;
                 width: 40px;
                 height: 4px;
@@ -483,24 +483,4 @@ input[type="color"]:focus,
     }
 
 
-}
-
-
-
-
-#play_video {
-    .video-js {
-        width: 100%;
-        height: auto;
-    }
-    .close {
-        position:absolute;
-        right:-30px;
-        top:0;
-        z-index:999;
-        font-size:2rem;
-        font-weight: normal;
-        color:#fff;
-        opacity:1;
-    }
 }
