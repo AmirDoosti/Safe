@@ -319,7 +319,6 @@ input[type="color"]:focus,
         .slider-content {
             position: absolute;
             left: 15%;
-            bottom: 20%;
             z-index: 10;
         }
 
@@ -360,11 +359,10 @@ input[type="color"]:focus,
     .choose-slider {
         position: absolute;
         right: 15%;
-        bottom: 10%;
         z-index: 10;
 
         div {
-            margin: 0 0 2vw 0;
+            margin: 0 0 2vh 0;
             text-align: right;
         }
 
