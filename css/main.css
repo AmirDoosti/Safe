@@ -4,6 +4,7 @@ variables
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Teko:wght@300;500&display=swap");
 :root {
   --our-cyan: #297a88;
+  --our-bg-color: #E4E5E7;
 }
 
 /************
@@ -48,10 +49,6 @@ button {
   margin: 0;
   font-family: 'Open Sans';
   font-weight: 300;
-}
-
-p {
-  text-align: justify;
 }
 
 a:hover {
@@ -519,6 +516,7 @@ input[type="color"]:focus,
 #contact {
   background-color: var(--our-cyan);
   padding: 60px 0;
+  position: relative;
 }
 
 #contact::after {
@@ -554,16 +552,16 @@ input[type="color"]:focus,
   z-index: 1;
 }
 
-#contact .card .card-title h3 {
+#contact .card .card-title0 h3 {
   font-size: 45px;
-  line-height: .5;
+  line-height: 20px;
 }
 
-#contact .card .card-title h3.light {
+#contact .card .card-title0 h3.light {
   font-weight: 300;
 }
 
-#contact .card .card-title h3.bold {
+#contact .card .card-title0 h3.bold {
   font-weight: 500;
 }
 
@@ -577,5 +575,203 @@ input[type="color"]:focus,
 
 #contact .card-buttons button:not(:last-child) {
   margin-right: 1.25rem;
+}
+
+#blog {
+  background: var(--our-bg-color);
+  padding: 60px 0;
+}
+
+#blog .row {
+  background: #fff;
+  margin: 3rem 0;
+}
+
+#blog .card .see-more {
+  border: 1px solid var(--our-cyan);
+  color: var(--our-cyan);
+  background: transparent;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#blog .card .see-more:hover {
+  background: var(--our-cyan);
+  color: #fff;
+}
+
+#blog .card .card-title-container {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#blog .card .card-title-container::before {
+  content: '';
+  position: absolute;
+  background: var(--our-cyan);
+  height: 100%;
+  width: 8px;
+  right: 98%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+}
+
+#blog .card .card-title-container .card-title {
+  padding-left: 1.5rem;
+}
+
+#works {
+  background: var(--our-cyan);
+  padding: 60px 0;
+}
+
+#works .section-title {
+  color: #fff;
+}
+
+#works #works_slider .img-container {
+  position: relative;
+}
+
+#works #works_slider .img-container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#works #works_slider .img-container img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#works #works_slider .work-info {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#works #works_slider .work-info a {
+  color: #fff;
+  cursor: pointer;
+}
+
+#works #works_slider .img-container:hover::before {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+#works #works_slider .img-container:hover .work-info {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+#works #works_slider .owl-dots {
+  margin-top: 1rem;
+}
+
+#works #works_slider .owl-dots .owl-dot span {
+  width: 45px;
+  height: 7px;
+  border-radius: unset;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#works #works_slider .owl-dots .owl-dot.active span, #works #works_slider .owl-dots .owl-dot:hover span {
+  background: white;
+}
+
+#footer {
+  background: var(--our-cyan);
+  padding: 60px 0;
+  border-top: 2px solid #fff;
+}
+
+#footer .card {
+  color: #fff;
+}
+
+#footer .footer-card-title {
+  font-size: 36px;
+  margin-bottom: .5rem;
+}
+
+#footer .footer-card-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#footer .footer-card-links a {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#footer .footer-card-links a:hover {
+  color: #fff;
+}
+
+#footer .footer-card-links a:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+#footer .social-medias {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .social-medias a {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer .social-medias a i {
+  color: var(--our-cyan);
+  font-size: 22px;
+}
+
+#footer .social-medias a:not(:last-child) {
+  margin-bottom: unset;
+  margin-right: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
