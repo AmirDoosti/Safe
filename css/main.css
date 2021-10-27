@@ -416,7 +416,7 @@ input[type="color"]:focus,
 }
 
 #hero .choose-slider div {
-  margin: 0 0 3vh 0;
+  margin: 0 0 4vh 0;
   text-align: right;
 }
 
@@ -443,6 +443,10 @@ input[type="color"]:focus,
   opacity: 0;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+#hero .choose-slider span.title-active {
+  font-weight: bold;
 }
 
 #hero .choose-slider span.title-active::before {
@@ -519,16 +523,6 @@ input[type="color"]:focus,
   position: relative;
 }
 
-#contact::after {
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 1px;
-  width: 100%;
-  position: absolute;
-  content: '';
-  bottom: 3%;
-  left: 0;
-}
-
 #contact .card {
   color: #fff;
 }
@@ -573,8 +567,13 @@ input[type="color"]:focus,
   margin-top: 3rem;
 }
 
-#contact .card-buttons button:not(:last-child) {
+#contact .card-buttons .our-btn:not(:last-child) {
   margin-right: 1.25rem;
+}
+
+#contact .card-buttons .our-btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 #blog {
@@ -585,6 +584,9 @@ input[type="color"]:focus,
 #blog .row {
   background: #fff;
   margin: 3rem 0;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #blog .card .see-more {
@@ -689,7 +691,7 @@ input[type="color"]:focus,
 }
 
 #works #works_slider .owl-dots {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 #works #works_slider .owl-dots .owl-dot span {
@@ -706,7 +708,7 @@ input[type="color"]:focus,
 #footer {
   background: var(--our-cyan);
   padding: 60px 0;
-  border-top: 2px solid #fff;
+  border-top: 1px solid #fff;
 }
 
 #footer .card {

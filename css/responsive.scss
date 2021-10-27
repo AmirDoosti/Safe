@@ -64,8 +64,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      clip-path: circle(0% at 95% 4%);
-      transition: all 0.7s ease;
+      clip-path: circle(0% at 92% 8%);
+      transition: all 0.6s ease;
       overflow-y: auto;
       ul {
         list-style: none;
@@ -82,7 +82,7 @@
     }
     
     .transform-0 {
-      clip-path: circle(150% at 89% 4%);
+      clip-path: circle(150% at 85% 4%);
     }
 
 
@@ -113,20 +113,15 @@
           background: #fff;
           color: #000;
       }
-
-      span {
-          position: relative;
-          top: 2px;
-      }
     }
 
   }
 
   .card-title {
-    font-size: 20px;
+    font-size: 30px;
   }
   .section-title {
-    font-size: 24px;
+    font-size: 34px;
   }
 
   #hero .choose-slider span {
@@ -274,11 +269,11 @@
   }
 
   #hero .choose-slider span {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   #hero .choose-slider span.title-active {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   #hero .slider-content, #hero .choose-slider {

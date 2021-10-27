@@ -81,10 +81,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-clip-path: circle(0% at 95% 4%);
-            clip-path: circle(0% at 95% 4%);
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+    -webkit-clip-path: circle(0% at 92% 8%);
+            clip-path: circle(0% at 92% 8%);
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
     overflow-y: auto;
   }
   #mobile_header .opened-menu ul {
@@ -99,8 +99,8 @@
     text-decoration: none;
   }
   #mobile_header .transform-0 {
-    -webkit-clip-path: circle(150% at 89% 4%);
-            clip-path: circle(150% at 89% 4%);
+    -webkit-clip-path: circle(150% at 85% 4%);
+            clip-path: circle(150% at 85% 4%);
   }
   #mobile_header li.main-li {
     position: relative;
@@ -127,15 +127,11 @@
     background: #fff;
     color: #000;
   }
-  #mobile_header .call-us span {
-    position: relative;
-    top: 2px;
-  }
   .card-title {
-    font-size: 20px;
+    font-size: 30px;
   }
   .section-title {
-    font-size: 24px;
+    font-size: 34px;
   }
   #hero .choose-slider span {
     font-size: 16px;
@@ -241,10 +237,10 @@
     font-size: 20px;
   }
   #hero .choose-slider span {
-    font-size: 22px;
+    font-size: 20px;
   }
   #hero .choose-slider span.title-active {
-    font-size: 28px;
+    font-size: 25px;
   }
   #hero .slider-content, #hero .choose-slider {
     bottom: 15%;

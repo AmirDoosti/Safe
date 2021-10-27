@@ -371,7 +371,7 @@ input[type="color"]:focus,
         z-index: 10;
 
         div {
-            margin: 0 0 3vh 0;
+            margin: 0 0 4vh 0;
             text-align: right;
         }
 
@@ -393,6 +393,9 @@ input[type="color"]:focus,
                 opacity: 0;
                 transition: all 0.4s ease;
             }
+        }
+        span.title-active  {
+            font-weight: bold;
         }
 
         span.title-active::before {
@@ -443,17 +446,6 @@ input[type="color"]:focus,
     padding: 60px 0;
     position: relative;
 
-    &::after {
-        background-color: rgba(255, 255, 255, 0.5);
-        height: 1px;
-        width: 100%;
-        position: absolute;
-        content: '';
-        bottom: 3%;
-        left: 0;
-
-    }
-
     .card {
         color: #fff;
 
@@ -493,8 +485,13 @@ input[type="color"]:focus,
         }
     }
     .card-buttons {
-        button:not(:last-child){
+        .our-btn:not(:last-child){
             margin-right: 1.25rem;
+            
+        }
+        .our-btn{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
     }
 
@@ -509,6 +506,9 @@ input[type="color"]:focus,
     .row {
         background: #fff;
         margin: 3rem 0;
+        max-width: 1150px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .card {
@@ -601,7 +601,7 @@ input[type="color"]:focus,
         }
 
         .owl-dots {
-            margin-top: 1rem;
+            margin-top: 3rem;
         }
 
         .owl-dots .owl-dot span {
@@ -621,7 +621,7 @@ input[type="color"]:focus,
 #footer {
     background: var(--our-cyan);
     padding: 60px 0;
-    border-top: 2px solid #fff;
+    border-top: 1px solid #fff;
 
     .card {
         color: #fff;
