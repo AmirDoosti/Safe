@@ -146,10 +146,10 @@
     bottom: 15%;
   }
   #hero .card-title {
-    font-size: 30px;
+    font-size: 46px;
   }
   #hero .card-subtitle {
-    font-size: 18px;
+    font-size: 20px;
   }
   #works_slider .img-container::before {
     opacity: 1 !important;
