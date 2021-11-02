@@ -19,8 +19,8 @@
     padding: 1rem 1.25rem;
   }
   #mobile_header .logo img {
-    width: 50%;
-    max-width: 100%;
+    width: 40%;
+    max-width: 40%;
     height: auto;
   }
   #mobile_header nav {
@@ -81,8 +81,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-clip-path: circle(0% at 92% 8%);
-            clip-path: circle(0% at 92% 8%);
+    -webkit-clip-path: circle(0% at 93% 5%);
+            clip-path: circle(0% at 93% 5%);
     -webkit-transition: all 0.6s ease;
     transition: all 0.6s ease;
     overflow-y: auto;

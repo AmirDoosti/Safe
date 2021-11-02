@@ -347,8 +347,6 @@ input[type="color"]:focus,
 }
 
 #hero .carousel-item .img-container img {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
   height: 100%;
 }
 
@@ -364,8 +362,8 @@ input[type="color"]:focus,
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 
 #hero .carousel-inner .slider-content {
